@@ -1,0 +1,15 @@
+{
+  "listeners": {
+    "*:8300": {
+      "application": "blogs"
+    }
+  },
+  "applications": {
+    "blogs": {
+      "type": "php",
+      "workers": 20,
+      "root": "/www/blogs/scripts",
+      "index": "index.php"
+    }
+  }
+}
