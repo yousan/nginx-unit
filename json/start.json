@@ -8,7 +8,7 @@
     "blogs": {
       "type": "php",
       "workers": 20,
-      "root": "/www/blogs/scripts",
+      "root": "/www/root",
       "index": "index.php"
     }
   }

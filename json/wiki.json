@@ -1,0 +1,8 @@
+{
+  "type": "python",
+  "workers": 10,
+  "module": "wsgi",
+  "user": "www-wiki",
+  "group": "www-wiki",
+  "path": "/www/wiki"
+}

@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  nginx-unit:
+    image: yousan/nginx-unit:0.1
+    container_name: nginx-unit
+    ports:
+      - 8200:8200
+      - 8300:8300
+    volumes:
+      - ./json:/root/json
+      - ./run:/var/run
+      - ./root:/www/root
+    restart: always
+
