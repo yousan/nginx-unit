@@ -4,6 +4,9 @@ NGINX Unit is a dynamic web application server, designed to run applications in 
 
 https://www.nginx.com/products/nginx-unit/
 
+# Supported tags and respective Dockerfile links
+latest, 0.1 ([](docker/Dockerfile))
+
 # How to run
 
 Run with docker-compose.
