@@ -5,7 +5,7 @@ NGINX Unit is a dynamic web application server, designed to run applications in 
 https://www.nginx.com/products/nginx-unit/
 
 # Supported tags and respective Dockerfile links
-latest, 0.1.1 ([https://github.com/yousan/nginx-unit/blob/0.1.1/Dockerfile](docker/Dockerfile))
+latest, 0.1.1 ([docker/Dockerfile](https://github.com/yousan/nginx-unit/blob/0.1.1/Dockerfile]))
 
 # How to run
 
@@ -28,7 +28,7 @@ $ sudo curl -X PUT -d @./json/wiki.json --unix-socket ./run/control.unit.sock ht
 you can use docker command
 
 ```bash
-$ docker run --name some-nginx-unt -d yousan/nginx-unit
+$ docker run --name some-nginx-unit -d yousan/nginx-unit
 ```
 
 Create root and run directories, mount those directories.
