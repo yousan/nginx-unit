@@ -6,6 +6,14 @@ https://www.nginx.com/products/nginx-unit/
 
 # How to run
 
-```bash
+Run with docker-compose.
 
+```bash
+$ docker-compose up
+```
+
+Or you can use docker command
+
+```bash
+$ docker run --privileged=true -v `pwd -P`/json:/root/json  -v `pwd -P`/root:/www/root -v `pwd -P`/run:/var/run:rw -p 8200:8200 -p 8300:8300  -ti ubuntu:yousan
 ```
