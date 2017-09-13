@@ -2,7 +2,7 @@ version: '2'
 
 services:
   nginx-unit:
-    image: yousan/nginx-unit:0.1
+    image: yousan/nginx-unit
     container_name: nginx-unit
     ports:
       - 8200:8200
