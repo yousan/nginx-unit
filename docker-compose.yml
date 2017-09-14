@@ -2,6 +2,7 @@ version: '2'
 
 services:
   nginx-unit:
+    #build: "./"
     image: yousan/nginx-unit
     container_name: nginx-unit
     ports:
@@ -11,7 +12,8 @@ services:
       - ./json:/root/json
       - ./run:/var/run
       - ./root:/www/root
-    restart: always
+      - ./php.ini:/etc/php/7.0/embed/php.ini
+#    restart: always
 
   mysql:
     image: mariadb
