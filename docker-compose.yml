@@ -13,3 +13,11 @@ services:
       - ./root:/www/root
     restart: always
 
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql
