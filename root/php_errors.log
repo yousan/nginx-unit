@@ -1,0 +1,8 @@
+[14-Sep-2017 08:04:22 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[14-Sep-2017 08:04:22 UTC] PHP Fatal error:  Unknown: Failed opening required '/www/root/robots.txt' (include_path='.:/usr/share/php') in Unknown on line 0
+[14-Sep-2017 08:04:23 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[14-Sep-2017 08:04:23 UTC] PHP Fatal error:  Unknown: Failed opening required '/www/root/favicon.ico' (include_path='.:/usr/share/php') in Unknown on line 0
+[14-Sep-2017 08:04:28 UTC] PHP Warning:  Unknown: failed to open stream: Resource temporarily unavailable in Unknown on line 0
+[14-Sep-2017 08:04:28 UTC] PHP Fatal error:  Unknown: Failed opening required '/www/root/wp' (include_path='.:/usr/share/php') in Unknown on line 0
+[14-Sep-2017 08:04:29 UTC] PHP Warning:  Unknown: failed to open stream: No such file or directory in Unknown on line 0
+[14-Sep-2017 08:04:29 UTC] PHP Fatal error:  Unknown: Failed opening required '/www/root/favicon.ico' (include_path='.:/usr/share/php') in Unknown on line 0
