@@ -2,14 +2,28 @@ version: '2'
 
 services:
   nginx-unit:
+    #build: "./"
     image: yousan/nginx-unit
     container_name: nginx-unit
     ports:
+      - 8081:8081
       - 8200:8200
       - 8300:8300
     volumes:
       - ./json:/root/json
       - ./run:/var/run
       - ./root:/www/root
-    restart: always
+      - ./conf/php.ini:/etc/php/7.0/embed/php.ini
+      - ./conf/default.conf:/etc/nginx/conf.d/default.conf
+#    restart: always
+#    command:
+#      - curl -X PUT -d @/root/json/start.json --unix-socket /run/control.unit.sock http://localhost/
 
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql:/var/lib/mysql

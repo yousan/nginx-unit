@@ -43,4 +43,13 @@ You can send curl requests from local host into docker container.
 ```bash
 $ sudo curl -X PUT -d @./json/wiki.json --unix-socket ./run/control.unit.sock http://localhost/ 
 ```
-Make sure you are bind directoriy (/var/run/) which have socket file (/var/run/control.sock)
+Make sure directory (/var/run/) which have socket file (/var/run/control.sock) is bound.
+
+# memorandum for me
+
+```bash
+$ docker build --rm ./ -t yousan/nginx-unit && \
+ docker-compose down && docker-compose up -d && \
+ docker-compose exec nginx-unit curl -X PUT -d @/root/json/start.json --unix-socket /var/run/control.unit.sock http://localhost/ && \
+ docker-compose exec nginx-unit /bin/bash
+```
