@@ -25,24 +25,25 @@ $ sudo curl -X PUT -d @./json/wiki.json --unix-socket ./run/control.unit.sock ht
 
 # Docker
 
-you can use docker command
+You can use docker command.
 
 ```bash
 $ docker run --name some-nginx-unit -d yousan/nginx-unit
 ```
 
-Create root and run directories, mount those directories.
+Create `root` and `run` directories and mount them.
 
 ```bash
 $ docker run --name some-nginx-unit -v /var/www:/www/root -v /var/run:/var/run:rw  -p 8200:8200 -p 8300:8300  yousan/nginx-unit
 ```
 
 # Send commands from Local
-You can send curl requests from local host into docker container.
+You can send curl requests to control NGINX Unit from local host into docker container.
 
 ```bash
 $ sudo curl -X PUT -d @./json/wiki.json --unix-socket ./run/control.unit.sock http://localhost/ 
 ```
+
 Make sure directory (/var/run/) which have socket file (/var/run/control.sock) is bound.
 
 # memorandum for me
